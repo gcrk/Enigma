@@ -1,0 +1,30 @@
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.navbar a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+.enigma, .hints, .infos {
+  width: 320px;
+  display: inline;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+img {
+  max-height: 450px;
+}
