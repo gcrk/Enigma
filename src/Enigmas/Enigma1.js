@@ -65,10 +65,10 @@ class Enigma1 extends Component {
         />
         <div className='enigma'>
           <h1>The appartement</h1>
-          <img src ={process.env.PUBLIC_URL + imgSource} width="98" height="72" />
+          <img src ={process.env.PUBLIC_URL + imgSource} width="98" height="72" alt="status" />
 
           <p>Appartment { this.state.door }</p>
-          <img src ={process.env.PUBLIC_URL + '/door.png'} />
+          <img src ={process.env.PUBLIC_URL + '/door.png'} alt="appartement door" />
           {this.state.passed && <Link to='/2'><div className='nextenigma'>NEXT</div></Link>}
           <DoorNumber
             input={ this.doorNumberRing }

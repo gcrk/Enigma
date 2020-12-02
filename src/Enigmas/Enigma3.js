@@ -96,7 +96,7 @@ class Enigma3 extends Component {
         />
         <div className='enigma'>
           <h1>The Swithers</h1>
-          <img src={process.env.PUBLIC_URL + imgSource} width="98" height="72" />
+          <img src={process.env.PUBLIC_URL + imgSource} width="98" height="72" alt="status" />
 
           <Switches
             button={ this.state.buttons }

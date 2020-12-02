@@ -96,7 +96,7 @@ class Enigma2 extends Component {
             onMouseEnter={this.handleBoxToggle}
             onMouseOut={this.handleBoxToggle}
             >0</span>ARD</h1>
-          <img src={process.env.PUBLIC_URL + imgSource} width="98" height="72" />
+          <img src={process.env.PUBLIC_URL + imgSource} width="98" height="72" alt="status" />
 
           <Board
             button={ this.state.buttons }
