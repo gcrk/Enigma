@@ -1,4 +1,8 @@
-
+* {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 .App {
   text-align: center;
   background-color: #282c34;
@@ -27,4 +31,31 @@ h1 {
 }
 img {
   max-height: 450px;
+}
+.board-row button {
+  color: #282c34;
+  text-transform: uppercase;
+  font-size: 25px;
+  background: rgba(255, 255, 255, 1);
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.board-row button:focus {
+  outline: 0;
+}
+.enigma2hide {
+  visibility: hidden;
+}
+.enigma2show {
+  visibility: visible;
+}
+.wrapper {
+  color: #484c54;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 5px;
 }
