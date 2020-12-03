@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import paper from './paper.png'
 
-const Home = () => {
+const About = () => {
   return(
 
     <div className='home-letter' style={{backgroundImage: `url(${paper})`, backgroundSize: 'cover' }}>
@@ -25,4 +25,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default About

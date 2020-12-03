@@ -1,23 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import paper from './paper.png'
 
-const Rules = () => {
+const End = () => {
   return(
 
     <div className='home-letter' style={{backgroundImage: `url(${paper})`, backgroundSize: 'cover' }}>
       <div className='home-letter-text' >
         <p>
-          Rules</p>
+          To be continued.</p>
         <p>
-          Very simple:</p>
+          New enigmas coming soon.</p>
         <p>
-          Go to an enigma.</p>
-        <p>
-          Resolve it!!!</p>
+          Please Come Back Later</p>
+
+        <Link to='/1' className='home-letter-play'>REPLAY</Link>
+
       </div>
+
     </div>
 
   )
 }
 
-export default Rules
+export default End

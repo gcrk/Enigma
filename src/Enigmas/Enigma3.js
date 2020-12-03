@@ -102,7 +102,7 @@ class Enigma3 extends Component {
           />
 
 
-          {this.state.passed && <Link to='/1' className='nextenigma'><div>NEXT</div></Link>}
+          {this.state.passed && <Link to='/4' className='nextenigma'><div>NEXT</div></Link>}
 
         </div>
         <Infos
