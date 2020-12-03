@@ -34,11 +34,11 @@ class Enigma2 extends Component {
     super();
     this.state = {
       passed: false,
-      hints: ["Maybe you should read the Hitchhiker Guide to the Galaxy", "Agent Mulder have the same appartment number", "Ok, if you need the last hint you could probably divide 84 by 2"],
+      hints: [`What value "null" in real life but is not "Null" in programming?`, `Ok so I need to get rid of all the "0" here`, `Is that a "O" or a "0" on the thing that I'm pointing?`],
       showHints: {hint1: false, hint2: false, hint3: false},
-      infos: "You are in front of the building of your uncle. You have to ring his appartement. There is no name at the front door but you remember that his appartement number is the answer to the question of the universe or something like that.",
+      infos: `There is no common lock on the door. Only this weird keypad that remind me something I know, but it seems that it was an eternity ago. There is a message that says: "some think it's null but my program says it's not, try to get rid of all of them to find the solution"`,
       points: 100,
-      buttons: { tl:"x", tm: "o", tr: "x", ml: "o", mm: "x", mr: "o", bl: "x", bm: "o", br:"x" },
+      buttons: { tl:"X", tm: "0", tr: "X", ml: "0", mm: "X", mr: "0", bl: "X", bm: "0", br:"X" },
       showBox: false
     }
   };
@@ -56,10 +56,10 @@ class Enigma2 extends Component {
     }
   }
   buttonSwap = (key) => {
-    if ( this.state.buttons[key] === 'x' ) {
-      this.setState( { buttons: { ...this.state.buttons, [key]: 'o' } } )
+    if ( this.state.buttons[key] === 'X' ) {
+      this.setState( { buttons: { ...this.state.buttons, [key]: '0' } } )
     } else {
-      this.setState( { buttons: { ...this.state.buttons, [key]: 'x' } } )
+      this.setState( { buttons: { ...this.state.buttons, [key]: 'X' } } )
     }
   }
 
@@ -67,7 +67,7 @@ class Enigma2 extends Component {
 
   passEnigma = () => {
     const { tl, tm, tr, ml, mm, mr, bl, bm, br } = this.state.buttons
-    if (tl==='o' && tm==='x' && tr==='o' && ml==='x' && mm==='x' && mr==='x' && bl==='x' && bm==='o' && br==='x' ) {
+    if (tl==='0' && tm==='X' && tr==='0' && ml==='X' && mm==='X' && mr==='X' && bl==='X' && bm==='0' && br==='X' ) {
       this.setState( { passed: true } )
     } else {
       console.log('lose')
@@ -82,21 +82,23 @@ class Enigma2 extends Component {
       imgSource = '/Red-Light.png'
     }
     return(
-      <div>
+      <div className='container'>
+
         <Hints
           showMethod={ this.showHint }
           showState={ this.state.showHints }
           hints={ this.state.hints }
         />
-        <Infos
-          infos={ this.state.infos }
-        />
+
         <div className='enigma'>
           <h1>The B<span
             onMouseEnter={this.handleBoxToggle}
             onMouseOut={this.handleBoxToggle}
             >0</span>ARD</h1>
-          <img src={process.env.PUBLIC_URL + imgSource} width="98" height="72" alt="status" />
+          <div className='status'>
+            <div>Status:</div>
+            <img src ={process.env.PUBLIC_URL + imgSource} width="68" height="52" alt="status" />
+          </div>
 
           <Board
             button={ this.state.buttons }
@@ -107,18 +109,22 @@ class Enigma2 extends Component {
             className={`${this.state.showBox ? "enigma2show" : "enigma2hide"}`}
           >
             <div className="wrapper">
-              <div>oxo</div>
-              <div>xxx</div>
-              <div>xox</div>
+              <div>0X0</div>
+              <div>XXX</div>
+              <div>X0X</div>
             </div>
           </div>
-          { this.state.passed && <Link to='/3'><div className='nextenigma'>NEXT</div></Link> }
+
           <button
             onClick={ this.passEnigma }
             className='validEnigma'
             >ENTER
           </button>
+          {this.state.passed && <Link to='/3' className='nextenigma'><div>NEXT</div></Link>}
         </div>
+        <Infos
+          infos={ this.state.infos }
+        />
       </div>
     )
   }

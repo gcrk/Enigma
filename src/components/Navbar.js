@@ -15,9 +15,9 @@ class Navbar extends Component {
       <div className='navbar'>
         <h1>Enigma</h1>
 
-          <Link to="/" >Play</Link>
-          <Link>Rules</Link>
-          <Link>About</Link>
+          <Link to="/" >Home</Link>
+          <Link to="/rules" >Rules</Link>
+          <Link to="/about" >About</Link>
 
       </div>
     )

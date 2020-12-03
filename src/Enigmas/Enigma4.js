@@ -3,14 +3,14 @@ import Hints from '../components/Hints.js';
 import Infos from '../components/Infos.js';
 import {Link} from 'react-router-dom';
 
-class Enigma1 extends Component {
+class Enigma4 extends Component {
   constructor() {
     super();
     this.state = {
       passed: false,
-      hints: ["Maybe you should read the Hitchhiker's Guide to the Galaxy", "Agent Mulder have the same appartment number", "Ok, The Answer to the Ultimate Question of Life, The Universe, and Everything is: 42"],
+      hints: ["Maybe you should read the Hitchhiker Guide to the Galaxy", "Agent Mulder have the same appartment number", "Ok, if you need the last hint you could probably divide 84 by 2"],
       showHints: {hint1: false, hint2: false, hint3: false},
-      infos: "You managed to enter the building of your uncle. You now have to find his appartement. There is no name at the front door and you don't know his appartement number but you remember that he used to say that it is the answer to the ultimate question of life, or the universe... Not sure",
+      infos: "You are in front of the building of your uncle. You have to ring his appartement. There is no name at the front door but you remember that his appartement number is the answer to the question of the universe or something like that.",
       points: 100,
       door: 0
     }
@@ -107,4 +107,4 @@ const Door = ( props ) => {
     </div>
   )
 }
-export default Enigma1;
+export default Enigma4;

@@ -10,13 +10,16 @@ const Home = () => {
         <p>
           Hello.</p>
         <p>
-          I know it's been a long time but I need to see you as fast as possible.</p>
+          This game has been developed by</p>
         <p>
-          Can you come at my appartement? I'm still living at the same place. I need to show you something but please don't tell anyone.</p>
+          Guillaume Canneton</p>
         <p>
-          Your beloved uncle...</p>
+          You can find my other project here:</p>
+        <Link to='https://github.com/gcrk' className='home-letter-play'>MY GITHUB</Link>
+        <p>
+          New Enigmas are coming...</p>
       </div>
-      <Link to='/1' className='home-letter-play'>PLAY !!!</Link>
+
     </div>
 
   )
