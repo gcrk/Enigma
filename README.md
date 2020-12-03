@@ -11,7 +11,7 @@ The story start with an unusual message from someone who ask you to meet him.
 that's not gonna be that easy because there is some puzzles to solve first.
 
 So far there is 3 puzzles and I'm still creating new ones to get to the end of the story.
-
+![](example.png)
 ## Tech
 
 The project is created entirely with React
