@@ -37,6 +37,7 @@ class Enigma2 extends Component {
       hints: [`What value "null" in real life but is not "Null" in programming?`, `Ok so I need to get rid of all the "0" here`, `Is that a "O" or a "0" on the thing that I'm pointing?`],
       showHints: {hint1: false, hint2: false, hint3: false},
       infos: `There is no common lock on the door. Only this weird keypad that remind me something I know, but it seems that it was an eternity ago. There is a message that says: "some think it's null but my program says it's not, try to get rid of all of them to find the solution"`,
+      enigmaHint: false,
       points: 100,
       buttons: { tl:"X", tm: "0", tr: "X", ml: "0", mm: "X", mr: "0", bl: "X", bm: "0", br:"X" },
       showBox: false
@@ -69,8 +70,8 @@ class Enigma2 extends Component {
     const { tl, tm, tr, ml, mm, mr, bl, bm, br } = this.state.buttons
     if (tl==='0' && tm==='X' && tr==='0' && ml==='X' && mm==='X' && mr==='X' && bl==='X' && bm==='0' && br==='X' ) {
       this.setState( { passed: true } )
-    } else {
-      console.log('lose')
+    } else if (tl==='X' && tm==='X' && tr==='X' && ml==='X' && mm==='X' && mr==='X' && bl==='X' && bm==='X' && br==='X' ) {
+      this.setState( { enigmaHint: true } )
     }
   }
 
@@ -91,10 +92,10 @@ class Enigma2 extends Component {
         />
 
         <div className='enigma'>
-          <h1>The B<span
+          <h1>The B{this.state.enigmaHint ? <span
             onMouseEnter={this.handleBoxToggle}
             onMouseOut={this.handleBoxToggle}
-            >0</span>ARD</h1>
+            >0</span> : <span>o</span> }ard</h1>
           <div className='status'>
             <div>Status:</div>
             <img src ={process.env.PUBLIC_URL + imgSource} width="68" height="52" alt="status" />
