@@ -1,10 +1,27 @@
-# Getting Started with Create React App
+# Enigma
+### version: 0.9.1 (RC 1.0 soon)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my final project during my General Assembly course.
+Here the adress to the game : [Enigma](https://5fc8cffd9a6a8e00087d8281--naughty-swanson-f7cd92.netlify.app/)
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+Enigma is a game with (obviously) enigmas.
+The story start with an unusual message from someone who ask you to meet him.
+that's not gonna be that easy because there is some puzzles to solve first.
+
+So far there is 3 puzzles and I'm still creating new ones to get to the end of the story.
+![](example.png)
+## Tech
+
+The project is created entirely with React
+
+## Deployement
+
+I choose Netlify to deploy
+The great functionality of this service is the auto rebuild when you commit on github
+
+## Here is the command you can use:
 
 ### `npm start`
 
@@ -39,32 +56,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
