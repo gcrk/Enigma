@@ -2,11 +2,7 @@
 ### version: 0.9.1 (RC 1.0 soon)
 
 This is my final project during my General Assembly course.
-<<<<<<< HEAD
 Here is the address to the website : [Enigma](https://enigma-ga.netlify.app/)
-=======
-Here the adress to the game : [Enigma](https://5fc98a945b150400080bf80c--naughty-swanson-f7cd92.netlify.app/)
->>>>>>> 845f71ebcdaf1f0f16a608c6a2407a2846d525e8
 
 ## About
 
