@@ -2,7 +2,7 @@
 ### version: 0.9.1 (RC 1.0 soon)
 
 This is my final project during my General Assembly course.
-Here the adress to the game : [Enigma](https://5fc8cffd9a6a8e00087d8281--naughty-swanson-f7cd92.netlify.app/)
+Here is the address to the website : [Enigma](https://enigma-ga.netlify.app/)
 
 ## About
 
@@ -55,5 +55,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-
